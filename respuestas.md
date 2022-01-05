@@ -147,11 +147,16 @@ while (i < 5){
     console.log("El valor de i es: " + i);
     i++;
 }`
-`let i = 10;
-while (i < 10) {
-    console.log(`"El valor de i es: " + i`);
-    i++;
+`let j = 10;
+while (j >= 2) {
+    console.log(`"El valor de j es: " + j`);
+    i--;
 }`
+
+## Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
+
+Pista: puedes usar la función prompt de JavaScript.
+
 
 ## 5- Arrays y Objetos
 Responde las siguientes preguntas en un nuevo archivo:
