@@ -117,3 +117,97 @@ switch (tipoDeSuscripcion) {
 
 `const subs = ['free', 'Basic', 'Expert', 'ExpertPlus'] const mensaje = ['mens1', 'm2', 'm3', 'm4'] const pos = subs.indexOf (tiposDeSubscripcion) if (pos !== -1) { console.log(mensaje[pos]) }`
 
+## 4- Ciclos
+## ¿Qué es un ciclo?
+
+- En palabras simples un ciclo u bucle es la forma en la que un bloque de código se ejecuta repetidas veces
+
+## ¿Qué tipos de ciclos existen en JavaScript?
+
+-Existen 3 tipos de ciclos: el `for` , el `while` y el `do while`
+
+## ¿Qué es un ciclo infinito y por qué es un problema?
+- Un ciclo infinito es cuando no se pone un limitante al ciclo y este se repite indefinidamente
+- Es un problema porque puede generar errores en el programa y/o computador
+
+## ¿Puedo mezclar ciclos y condicionales? 
+- Si se pueden mezclar 
+
+## Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+
+for (let i = 0; i < 5; i++) {
+    console.log("El valor de i es: " + i);
+}
+for (let i = 10; i >= 2; i--) {
+    console.log("El valor de i es: " + i);
+}
+
+`let i = 0;
+while (i < 5){
+    console.log("El valor de i es: " + i);
+    i++;
+}`
+`let i = 10;
+while (i < 10) {
+    console.log(`"El valor de i es: " + i`);
+    i++;
+}`
+
+## 5- Arrays y Objetos
+Responde las siguientes preguntas en un nuevo archivo:
+
+## ¿Qué es un array?
+- Son contenedores de datos donde podemos almacenar : strings , numbers , objetos , etc.
+
+## ¿Qué es un objeto?
+- Es un tipo de dato que posee propiedades y tipos el cual usa un concepto de `clave:valor`
+
+## ¿Cuándo es mejor usar objetos o arrays?
+- Los arrays son una buena opci+on si queremos almacenar datos en forma de lista por ejemplo una lista de nombres: `['Alexander','Gabriel','Fernando']`
+- En caso de que queramos algo mas detallado es mejor usar objetos por ejenplo para obtener información sobre una persona:
+{
+    nombre:'Alexander'
+    apellido:'Ajalla'
+    edad:17
+}
+
+## ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+-Dentro de un objeto no se pueden incluir arrays pero si se pueden crear un array de objetos
+
+## Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+
+`let nombres = ["Alexander", "Gianella", "Julio"];
+
+function listaNombres(nombres) {
+  console.log(nombres[0]);
+}
+listaNombres();`
+
+## Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+
+`let nombres = ["Gianella", "Mayra", "Gabi"];
+function arrayNombres(nombres) {
+  nombres.forEach((nombres) => {
+    console.log(`Hola de nuevo ${nombres}`);
+  });
+}
+arrayNombres(nombres);
+`
+## Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+
+`let persona = {
+  nombre: "Alexander",
+  apellido: "Ajalla",
+  edad: 17,
+  gamer: true,
+  otaku: true,
+};
+
+function getPersona(persona) {
+  let getValue = Object.values(persona);
+  getValue.forEach((item) => {
+    console.log(item);
+  });
+}
+
+getPersona(persona);`
